@@ -1,0 +1,19 @@
+$primary-background-color: #333;
+$primary-text-color: #fff;
+$sidebar-width: 200px;
+
+.navbar {
+  background-color: $primary-background-color;
+  color: $primary-text-color;
+  top: 0;
+  position: fixed;
+  border-radius: 4px;
+  width: 100%;
+  padding: 15px;
+
+  .navbar-brand {
+    display: inline-block;
+    text-decoration: none;
+    color: $primary-text-color;
+  }
+}

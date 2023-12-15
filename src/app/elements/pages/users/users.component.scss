@@ -1,0 +1,109 @@
+.add-user-button {
+  text-align: right;
+  margin-bottom: 20px;
+
+  .add-user-btn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: #1e4d2b;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+
+    svg {
+      margin-right: 8px;
+      width: 20px;
+      height: 20px;
+      stroke: currentColor;
+      stroke-width: 1.5;
+    }
+
+    &:hover {
+      background-color: #177245;
+    }
+  }
+}
+
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+
+  th,
+  td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+
+  th {
+    background-color: #f2f2f2;
+  }
+
+  img {
+    max-width: 50px;
+    max-height: 50px;
+    border-radius: 50%;
+  }
+
+  .action-dropdown {
+    display: inline-block;
+
+    .action-btn {
+      color: black;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      svg {
+        margin-left: 8px;
+        width: 20px;
+        height: 20px;
+        stroke: currentColor;
+        stroke-width: 1.5;
+      }
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      z-index: 1;
+      border-radius: 5px;
+      margin-top: 5px;
+      border: none;
+
+      a {
+        display: block;
+        padding: 10px;
+        color: #333;
+        text-decoration: none;
+
+        svg {
+          margin-right: 8px;
+          width: 20px;
+          height: 20px;
+          stroke: currentColor;
+          stroke-width: 1.5;
+        }
+
+        &:hover {
+          background-color: #f8f9fa;
+        }
+      }
+    }
+
+    &:hover .dropdown-content {
+      display: block;
+    }
+  }
+  border-radius: 8px;
+}
